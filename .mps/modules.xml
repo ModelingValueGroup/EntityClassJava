@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Classes/Classes.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Entities/Entities.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExampleSolution/ExampleSolution.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
