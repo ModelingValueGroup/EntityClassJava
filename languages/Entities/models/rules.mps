@@ -64,9 +64,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -236,9 +234,7 @@
           <node concept="Xl_RD" id="6BrCNrdFOKL" role="37wK5m">
             <property role="Xl_RC" value="classes" />
           </node>
-          <node concept="3clFbT" id="6BrCNrdFOXS" role="37wK5m">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="39SS_6szE8L" role="37wK5m" />
         </node>
       </node>
     </node>
