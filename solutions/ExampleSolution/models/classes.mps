@@ -25,30 +25,30 @@
   </registry>
   <node concept="1nhSJe" id="39SS_6s$8Q3">
     <property role="TrG5h" value="customer" />
-    <node concept="1nhSJ3" id="39SS_6s$8Qd" role="1nhSIO">
+    <node concept="1nhSJ3" id="7d9fy49nHOo" role="1nhSIO">
       <property role="TrG5h" value="name" />
       <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Y" resolve="String" />
     </node>
-    <node concept="1nhSJ3" id="39SS_6s$8Qe" role="1nhSIO">
+    <node concept="1nhSJ3" id="7d9fy49nHOp" role="1nhSIO">
       <property role="TrG5h" value="age" />
       <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
     </node>
-    <node concept="1nhSJ3" id="39SS_6s$8Qf" role="1nhSIO">
+    <node concept="1nhSJ3" id="7d9fy49nHOq" role="1nhSIO">
       <property role="TrG5h" value="order" />
       <ref role="1nhSIN" node="39SS_6s$8Q4" resolve="order" />
-      <ref role="1nhSIZ" node="39SS_6s$8Qh" resolve="customer" />
+      <ref role="1nhSIZ" node="7d9fy49nHOs" resolve="customer" />
     </node>
   </node>
   <node concept="1nhSJe" id="39SS_6s$8Q4">
     <property role="TrG5h" value="order" />
-    <node concept="1nhSJ3" id="39SS_6s$8Qg" role="1nhSIO">
+    <node concept="1nhSJ3" id="7d9fy49nHOr" role="1nhSIO">
       <property role="TrG5h" value="number" />
       <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
     </node>
-    <node concept="1nhSJ3" id="39SS_6s$8Qh" role="1nhSIO">
+    <node concept="1nhSJ3" id="7d9fy49nHOs" role="1nhSIO">
       <property role="TrG5h" value="customer" />
       <ref role="1nhSIN" node="39SS_6s$8Q3" resolve="customer" />
-      <ref role="1nhSIZ" node="39SS_6s$8Qf" resolve="order" />
+      <ref role="1nhSIZ" node="7d9fy49nHOq" resolve="order" />
     </node>
   </node>
 </model>
