@@ -25,31 +25,27 @@
       </concept>
     </language>
   </registry>
-  <node concept="1nh9o1" id="23AIHLHbHf2">
-    <property role="TrG5h" value="customer" />
-    <node concept="1nh9qv" id="23AIHLHbHi9" role="1nh9qf">
-      <property role="TrG5h" value="order" />
-      <ref role="1nh9qq" node="23AIHLHbHhb" resolve="order" />
-      <ref role="1nh9q6" node="23AIHLHbHhB" resolve="customer" />
+  <node concept="1nh9o1" id="1l1PQfi4Ajg">
+    <property role="TrG5h" value="Order" />
+    <node concept="1nh9qv" id="1l1PQfi4AsH" role="1nh9qf">
+      <property role="TrG5h" value="customer" />
+      <ref role="1nh9q6" node="1l1PQfi4Aqt" resolve="orders" />
+      <ref role="1nh9qq" node="1l1PQfi4Anw" resolve="Customer" />
     </node>
-    <node concept="1nh9qk" id="23AIHLHbHf7" role="1nh9qC">
-      <property role="TrG5h" value="name" />
-    </node>
-    <node concept="1nh9qk" id="23AIHLHbHfq" role="1nh9qC">
-      <property role="TrG5h" value="age" />
+    <node concept="1nh9qk" id="1l1PQfi4AlP" role="1nh9qC">
+      <property role="TrG5h" value="total" />
       <property role="1nh9qj" value="true" />
     </node>
   </node>
-  <node concept="1nh9o1" id="23AIHLHbHhb">
-    <property role="TrG5h" value="order" />
-    <node concept="1nh9qv" id="23AIHLHbHhB" role="1nh9qf">
-      <property role="TrG5h" value="customer" />
-      <ref role="1nh9qq" node="23AIHLHbHf2" resolve="customer" />
-      <ref role="1nh9q6" node="23AIHLHbHi9" resolve="order" />
+  <node concept="1nh9o1" id="1l1PQfi4Anw">
+    <property role="TrG5h" value="Customer" />
+    <node concept="1nh9qv" id="1l1PQfi4Aqt" role="1nh9qf">
+      <property role="TrG5h" value="orders" />
+      <ref role="1nh9qq" node="1l1PQfi4Ajg" resolve="Order" />
+      <ref role="1nh9q6" node="1l1PQfi4AsH" resolve="customer" />
     </node>
-    <node concept="1nh9qk" id="23AIHLHbHhg" role="1nh9qC">
-      <property role="TrG5h" value="number" />
-      <property role="1nh9qj" value="true" />
+    <node concept="1nh9qk" id="1l1PQfi4Ap1" role="1nh9qC">
+      <property role="TrG5h" value="name" />
     </node>
   </node>
 </model>

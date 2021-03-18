@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3261e762-84e6-448d-b6ac-38cf3a0c55f9(classes)">
+<model ref="r:3d9e8843-c050-4412-9135-b52f1a9808a4(classes)">
   <persistence version="9" />
   <languages>
     <use id="ab1145f4-3736-423d-a91b-872dd94eaad7" name="Classes" version="0" />
   </languages>
   <imports>
-    <import index="7nrr" ref="r:2be459ee-636c-4739-9979-ac3e063710fe(Classes.base)" />
+    <import index="7nrr" ref="r:2be459ee-636c-4739-9979-ac3e063710fe(Classes.base)" implicit="true" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -23,32 +23,28 @@
       </concept>
     </language>
   </registry>
-  <node concept="1nhSJe" id="39SS_6s$8Q3">
-    <property role="TrG5h" value="customer" />
-    <node concept="1nhSJ3" id="238cZmsIGN6" role="1nhSIO">
+  <node concept="1nhSJe" id="1l1PQfi4Aji">
+    <property role="TrG5h" value="Order" />
+    <node concept="1nhSJ3" id="1l1PQfi4An7" role="1nhSIO">
+      <property role="TrG5h" value="total" />
+      <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
+    </node>
+    <node concept="1nhSJ3" id="1l1PQfi4AsJ" role="1nhSIO">
+      <property role="TrG5h" value="customer" />
+      <ref role="1nhSIZ" node="1l1PQfi4Aqv" resolve="orders" />
+      <ref role="1nhSIN" node="1l1PQfi4Any" resolve="Customer" />
+    </node>
+  </node>
+  <node concept="1nhSJe" id="1l1PQfi4Any">
+    <property role="TrG5h" value="Customer" />
+    <node concept="1nhSJ3" id="1l1PQfi4Ap4" role="1nhSIO">
       <property role="TrG5h" value="name" />
       <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Y" resolve="String" />
     </node>
-    <node concept="1nhSJ3" id="238cZmsIGN5" role="1nhSIO">
-      <property role="TrG5h" value="age" />
-      <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
-    </node>
-    <node concept="1nhSJ3" id="238cZmsIGCD" role="1nhSIO">
-      <property role="TrG5h" value="order" />
-      <ref role="1nhSIN" node="39SS_6s$8Q4" resolve="order" />
-      <ref role="1nhSIZ" node="7d9fy49nHOs" resolve="customer" />
-    </node>
-  </node>
-  <node concept="1nhSJe" id="39SS_6s$8Q4">
-    <property role="TrG5h" value="order" />
-    <node concept="1nhSJ3" id="7d9fy49nHOr" role="1nhSIO">
-      <property role="TrG5h" value="number" />
-      <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
-    </node>
-    <node concept="1nhSJ3" id="7d9fy49nHOs" role="1nhSIO">
-      <property role="TrG5h" value="customer" />
-      <ref role="1nhSIN" node="39SS_6s$8Q3" resolve="customer" />
-      <ref role="1nhSIZ" node="238cZmsIGCD" resolve="order" />
+    <node concept="1nhSJ3" id="1l1PQfi4Aqv" role="1nhSIO">
+      <property role="TrG5h" value="orders" />
+      <ref role="1nhSIN" node="1l1PQfi4Aji" resolve="Order" />
+      <ref role="1nhSIZ" node="1l1PQfi4AsJ" resolve="customer" />
     </node>
   </node>
 </model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b622b60c-3050-4464-b9e0-d4ff738bc9a9(java)">
+<model ref="r:32cf1696-e28b-43a0-8c66-6c81668492e5(java)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -31,39 +31,36 @@
       </concept>
     </language>
   </registry>
-  <node concept="312cEu" id="39SS_6s$8Q6">
+  <node concept="312cEu" id="1l1PQfi4Ajh">
     <property role="TrG5h" value="Order" />
-    <node concept="312cEg" id="39SS_6s$8Qi" role="jymVt">
-      <property role="TrG5h" value="number" />
-      <node concept="10Oyi0" id="39SS_6s$8Qp" role="1tU5fm" />
-      <node concept="3Tm1VV" id="39SS_6s$8Qq" role="1B3o_S" />
+    <node concept="3Tm1VV" id="1l1PQfi4Ajj" role="1B3o_S" />
+    <node concept="312cEg" id="1l1PQfi4An9" role="jymVt">
+      <property role="TrG5h" value="total" />
+      <node concept="10Oyi0" id="1l1PQfi4An8" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1l1PQfi4Ana" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="39SS_6s$8Q5" role="jymVt">
+    <node concept="312cEg" id="1l1PQfi4AsK" role="jymVt">
       <property role="TrG5h" value="customer" />
-      <node concept="3uibUv" id="39SS_6s$8Q7" role="1tU5fm">
-        <ref role="3uigEE" node="39SS_6s$8Q9" resolve="Customer" />
+      <node concept="3Tm1VV" id="1l1PQfi4AsL" role="1B3o_S" />
+      <node concept="3uibUv" id="1l1PQfi4Avf" role="1tU5fm">
+        <ref role="3uigEE" node="1l1PQfi4Anx" resolve="Customer" />
       </node>
-      <node concept="3Tm1VV" id="39SS_6s$8Q8" role="1B3o_S" />
     </node>
   </node>
-  <node concept="312cEu" id="39SS_6s$8Q9">
+  <node concept="312cEu" id="1l1PQfi4Anx">
     <property role="TrG5h" value="Customer" />
-    <node concept="312cEg" id="238cZmsIGN2" role="jymVt">
+    <node concept="3Tm1VV" id="1l1PQfi4Anz" role="1B3o_S" />
+    <node concept="312cEg" id="1l1PQfi4Ap6" role="jymVt">
       <property role="TrG5h" value="name" />
-      <node concept="17QB3L" id="238cZmsIGN3" role="1tU5fm" />
-      <node concept="3Tm1VV" id="238cZmsIGN4" role="1B3o_S" />
+      <node concept="17QB3L" id="1l1PQfi4Ap5" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1l1PQfi4Ap7" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="238cZmsIGMZ" role="jymVt">
-      <property role="TrG5h" value="age" />
-      <node concept="10Oyi0" id="238cZmsIGN0" role="1tU5fm" />
-      <node concept="3Tm1VV" id="238cZmsIGN1" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="238cZmsIGCC" role="jymVt">
-      <property role="TrG5h" value="order" />
-      <node concept="3uibUv" id="238cZmsIGCE" role="1tU5fm">
-        <ref role="3uigEE" node="39SS_6s$8Q6" resolve="Order" />
+    <node concept="312cEg" id="1l1PQfi4Aqw" role="jymVt">
+      <property role="TrG5h" value="orders" />
+      <node concept="3Tm1VV" id="1l1PQfi4Aqx" role="1B3o_S" />
+      <node concept="3uibUv" id="1l1PQfi4Asa" role="1tU5fm">
+        <ref role="3uigEE" node="1l1PQfi4Ajh" resolve="Order" />
       </node>
-      <node concept="3Tm1VV" id="238cZmsIGCF" role="1B3o_S" />
     </node>
   </node>
 </model>
