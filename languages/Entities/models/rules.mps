@@ -27,6 +27,9 @@
       <concept id="394138091856975850" name="DclareMPS.structure.ModelBuilderRoots" flags="ng" index="2oVplF">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="2328169690264975584" name="DclareMPS.structure.CheckedDotExpressionWithElse" flags="ng" index="2_n6$v">
+        <child id="2328169690265034470" name="else" index="2_mOWp" />
+      </concept>
       <concept id="3943890974580131286" name="DclareMPS.structure.Equation" flags="ng" index="E34o$" />
       <concept id="5858913584106642961" name="DclareMPS.structure.Aspect" flags="ng" index="2Rb1jd" />
       <concept id="359025656632646706" name="DclareMPS.structure.ThisExpression" flags="ng" index="2Wb9Zs" />
@@ -733,7 +736,10 @@
           <node concept="3cmrfG" id="4I4zpQgFGLr" role="3uHU7w">
             <property role="3cmrfH" value="20" />
           </node>
-          <node concept="2OqwBi" id="4I4zpQgFDkb" role="3uHU7B">
+          <node concept="2_n6$v" id="6sVQx8J$bIz" role="3uHU7B">
+            <node concept="3cmrfG" id="6sVQx8J$caS" role="2_mOWp">
+              <property role="3cmrfH" value="0" />
+            </node>
             <node concept="2OqwBi" id="4I4zpQgFBMr" role="2Oq$k0">
               <node concept="2Wb9Zs" id="4I4zpQgFBtP" role="2Oq$k0" />
               <node concept="3TrcHB" id="4I4zpQgFCri" role="2OqNvi">
