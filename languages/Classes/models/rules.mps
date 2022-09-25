@@ -2,7 +2,7 @@
 <model ref="r:d369aadf-9ff9-4bfc-9d64-c6c3776f7f1f(Classes.rules)">
   <persistence version="9" />
   <languages>
-    <use id="c32b788d-8e4b-4023-97f5-3e90d04ed77b" name="DclareMPS" version="2" />
+    <use id="c32b788d-8e4b-4023-97f5-3e90d04ed77b" name="DclareMPS" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,6 +27,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="3943890974580131286" name="DclareMPS.structure.Equation" flags="ng" index="E34o$" />
+      <concept id="5858913584106642961" name="DclareMPS.structure.Aspect" flags="ng" index="2Rb1jd" />
       <concept id="359025656632646706" name="DclareMPS.structure.ThisExpression" flags="ng" index="2Wb9Zs" />
       <concept id="5867814440126781489" name="DclareMPS.structure.Models" flags="ng" index="2YLb8l" />
       <concept id="5867814440126705082" name="DclareMPS.structure.RootsImplicitSelect" flags="ng" index="2YL$uu">
@@ -58,6 +59,7 @@
         <child id="7745179321625723507" name="statement" index="30jUnX" />
       </concept>
       <concept id="2483495814491113449" name="DclareMPS.structure.RuleSet" flags="ng" index="3tBE6x">
+        <reference id="5858913584106722103" name="aspect" index="2RaPBF" />
         <child id="7599581349097315861" name="members" index="1FPzNG" />
       </concept>
       <concept id="589150464400548802" name="DclareMPS.structure.FeatureExpression" flags="ng" index="3tXfrV">
@@ -193,6 +195,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -212,7 +217,9 @@
     </language>
   </registry>
   <node concept="311c5q" id="7nLsRkyHLzI">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="cen6:7nLsRkyHJyQ" resolve="Attribute" />
+    <ref role="2RaPBF" node="7CAk_9bMTQo" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQP6" role="1FPzNG" />
     <node concept="32q3_s" id="wW3DRjlCiY" role="1FPzNG">
       <property role="TrG5h" value="javaField" />
@@ -338,7 +345,9 @@
     <node concept="1FPxxo" id="2CA5u7EKQP8" role="1FPzNG" />
   </node>
   <node concept="311c5q" id="3Zg1KgVbkPW">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="cen6:7nLsRkyHJyV" resolve="Class" />
+    <ref role="2RaPBF" node="7CAk_9bMTQo" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQP9" role="1FPzNG" />
     <node concept="32q3_s" id="3Zg1KgVbkPX" role="1FPzNG">
       <property role="TrG5h" value="javaClass" />
@@ -543,7 +552,9 @@
     <node concept="1FPxxo" id="2CA5u7EKQPc" role="1FPzNG" />
   </node>
   <node concept="311c5q" id="64PiBrfLkfI">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="cen6:7nLsRkyHJyW" resolve="Classifier" />
+    <ref role="2RaPBF" node="7CAk_9bMTQo" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPd" role="1FPzNG" />
     <node concept="32q3_s" id="7Uh_Vz2aJvn" role="1FPzNG">
       <property role="TrG5h" value="javaType" />
@@ -555,6 +566,8 @@
     <node concept="1FPxxo" id="2CA5u7EKQPe" role="1FPzNG" />
   </node>
   <node concept="3115$e" id="3Zg1KgVboFR">
+    <property role="3GE5qa" value="default." />
+    <ref role="2RaPBF" node="7CAk_9bMTQo" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPf" role="1FPzNG" />
     <node concept="32q3_s" id="6cRIRSSAR2M" role="1FPzNG">
       <property role="TrG5h" value="classes" />
@@ -761,7 +774,9 @@
     <node concept="1FPxxo" id="2CA5u7EKQPi" role="1FPzNG" />
   </node>
   <node concept="311c5q" id="7Uh_Vz2aOmr">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="cen6:7nLsRkyHJz5" resolve="Type" />
+    <ref role="2RaPBF" node="7CAk_9bMTQo" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPj" role="1FPzNG" />
     <node concept="3tBE6w" id="7Uh_Vz2aOJ1" role="1FPzNG">
       <node concept="3clFbF" id="7Uh_Vz2aOJ7" role="30jUnX">
@@ -822,6 +837,10 @@
       </node>
     </node>
     <node concept="1FPxxo" id="2CA5u7EKQPk" role="1FPzNG" />
+  </node>
+  <node concept="2Rb1jd" id="7CAk_9bMTQo">
+    <property role="TrG5h" value="DEFAULT" />
+    <property role="3GE5qa" value="default." />
   </node>
 </model>
 

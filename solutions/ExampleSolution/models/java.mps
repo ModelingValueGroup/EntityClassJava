@@ -2,7 +2,7 @@
 <model ref="r:32cf1696-e28b-43a0-8c66-6c81668492e5(java)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports />
   <registry>
@@ -33,12 +33,12 @@
   </registry>
   <node concept="312cEu" id="1l1PQfi4Ajh">
     <property role="TrG5h" value="Order" />
-    <node concept="3Tm1VV" id="1l1PQfi4Ajj" role="1B3o_S" />
-    <node concept="312cEg" id="1l1PQfi4An9" role="jymVt">
+    <node concept="312cEg" id="JxoEKFvd1r" role="jymVt">
       <property role="TrG5h" value="total" />
-      <node concept="10Oyi0" id="1l1PQfi4An8" role="1tU5fm" />
-      <node concept="3Tm1VV" id="1l1PQfi4Ana" role="1B3o_S" />
+      <node concept="3Tm1VV" id="JxoEKFvd1q" role="1B3o_S" />
+      <node concept="10Oyi0" id="JxoEKFvd1s" role="1tU5fm" />
     </node>
+    <node concept="3Tm1VV" id="1l1PQfi4Ajj" role="1B3o_S" />
     <node concept="312cEg" id="1l1PQfi4AsK" role="jymVt">
       <property role="TrG5h" value="customer" />
       <node concept="3Tm1VV" id="1l1PQfi4AsL" role="1B3o_S" />

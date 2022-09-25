@@ -2,7 +2,7 @@
 <model ref="r:d0f06840-82d5-42ef-9ded-35042b351cd2(Entities.rules)">
   <persistence version="9" />
   <languages>
-    <use id="c32b788d-8e4b-4023-97f5-3e90d04ed77b" name="DclareMPS" version="2" />
+    <use id="c32b788d-8e4b-4023-97f5-3e90d04ed77b" name="DclareMPS" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,6 +28,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="3943890974580131286" name="DclareMPS.structure.Equation" flags="ng" index="E34o$" />
+      <concept id="5858913584106642961" name="DclareMPS.structure.Aspect" flags="ng" index="2Rb1jd" />
       <concept id="359025656632646706" name="DclareMPS.structure.ThisExpression" flags="ng" index="2Wb9Zs" />
       <concept id="5867814440126781489" name="DclareMPS.structure.Models" flags="ng" index="2YLb8l" />
       <concept id="5867814440126705082" name="DclareMPS.structure.RootsImplicitSelect" flags="ng" index="2YL$uu">
@@ -59,6 +60,7 @@
         <child id="7745179321625723507" name="statement" index="30jUnX" />
       </concept>
       <concept id="2483495814491113449" name="DclareMPS.structure.RuleSet" flags="ng" index="3tBE6x">
+        <reference id="5858913584106722103" name="aspect" index="2RaPBF" />
         <child id="7599581349097315861" name="members" index="1FPzNG" />
       </concept>
       <concept id="589150464400548871" name="DclareMPS.structure.FeatureReference" flags="ng" index="3tXf4Y">
@@ -197,6 +199,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -221,7 +226,9 @@
     </language>
   </registry>
   <node concept="311c5q" id="6BrCNrdFNRp">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="47ia:7nLsRkyHulO" resolve="Entity" />
+    <ref role="2RaPBF" node="7CAk_9bMTQp" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPl" role="1FPzNG" />
     <node concept="32q3_s" id="6BrCNrdFP2$" role="1FPzNG">
       <property role="TrG5h" value="classs" />
@@ -353,6 +360,8 @@
     <node concept="1FPxxo" id="2CA5u7EKQPn" role="1FPzNG" />
   </node>
   <node concept="3115$e" id="6BrCNrdFNRO">
+    <property role="3GE5qa" value="default." />
+    <ref role="2RaPBF" node="7CAk_9bMTQp" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPo" role="1FPzNG" />
     <node concept="32q3_s" id="6BrCNrdFSqP" role="1FPzNG">
       <property role="TrG5h" value="entities" />
@@ -569,7 +578,9 @@
     <node concept="1FPxxo" id="2CA5u7EKQPr" role="1FPzNG" />
   </node>
   <node concept="311c5q" id="6BrCNrdFNRN">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="47ia:7nLsRkyHunx" resolve="Property" />
+    <ref role="2RaPBF" node="7CAk_9bMTQp" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPs" role="1FPzNG" />
     <node concept="32q3_s" id="6BrCNrdH$Bu" role="1FPzNG">
       <property role="TrG5h" value="attribute" />
@@ -739,7 +750,9 @@
     <node concept="1FPxxo" id="2CA5u7EKQPv" role="1FPzNG" />
   </node>
   <node concept="311c5q" id="6XxzIZjRfYd">
+    <property role="3GE5qa" value="default." />
     <ref role="311c5K" to="47ia:7nLsRkyHunE" resolve="Relation" />
+    <ref role="2RaPBF" node="7CAk_9bMTQp" resolve="DEFAULT" />
     <node concept="1FPxxo" id="2CA5u7EKQPw" role="1FPzNG" />
     <node concept="32q3_s" id="6XxzIZjRfYg" role="1FPzNG">
       <property role="TrG5h" value="attribute" />
@@ -904,6 +917,10 @@
       </node>
     </node>
     <node concept="1FPxxo" id="2CA5u7EKQPz" role="1FPzNG" />
+  </node>
+  <node concept="2Rb1jd" id="7CAk_9bMTQp">
+    <property role="TrG5h" value="DEFAULT" />
+    <property role="3GE5qa" value="default." />
   </node>
 </model>
 
