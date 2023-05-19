@@ -41,6 +41,10 @@
       <property role="TrG5h" value="name" />
       <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Y" resolve="String" />
     </node>
+    <node concept="1nhSJ3" id="65$pnVIBJE3" role="1nhSIO">
+      <property role="TrG5h" value="burp" />
+      <ref role="1nhSIN" to="7nrr:7jYi1ObFz6Z" resolve="Integer" />
+    </node>
     <node concept="1nhSJ3" id="1l1PQfi4Aqv" role="1nhSIO">
       <property role="TrG5h" value="orders" />
       <ref role="1nhSIN" node="1l1PQfi4Aji" resolve="Order" />
